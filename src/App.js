@@ -5,15 +5,18 @@ import './App.css';
 function Tomato(){
   const [hidden, setHidden] = useState (false);
   const tomatoStyle = {
+  display: "inline",
+  color: "white",
   width: "80%",
-  height: "12%",
+  height: "50px",
   background: "red",
   margin: "2% auto",
-  borderradius: "10px",
+  borderRadius: "12px",
+  border: "12px solid transparent",
   };
   return(
-    <div style={tomatoStyle}>
-      {!hidden && <button onClick={ () => setHidden(true)}>Tom</button>}
+    <div>
+      {!hidden && <button style={tomatoStyle} onClick={ () => setHidden(true)}>Tomato</button>}
     </div>
   );
 }
@@ -21,18 +24,40 @@ function Tomato(){
 function Lettuce(){
   const [hidden, setHidden] = useState(false);
   const lettuceStyle = {
+  display: "inline",
+  color: "white",
   width: "80%",
-  height: "12%",
+  height: "50px",
   background: "green",
   margin: "2% auto",
-  borderradius: "3px",
+  border: "12px solid transparent",
+  borderRadius: "12px",
   };
   return (
-    <div style={lettuceStyle}>
-      {!hidden && <button onClick={ () => setHidden(true)}>Let</button>}
-    </div>
+    <div8>
+      {!hidden && <button style={lettuceStyle} onClick={ () => setHidden(true)}>Lettuce</button>}
+    </div8>
 
   );
+}
+
+function Patty(){
+  const [hidden, setHidden] = useState (false);
+  const pattyStyle = {
+  display: "inline",
+  color: "white",
+  width: "80%",
+  height: "70px",
+  background: "linear-gradient(#7f3608, #702e05)",
+  margin: "2% auto",
+  borderRadius: "12px",
+  border: "12px solid transparent",
+  };
+  return(
+    <div>
+      {!hidden && <button style={pattyStyle} onClick={ () => setHidden(true)}>Meat</button>}
+    </div>
+  ); 
 }
 
 function App(){  
@@ -42,9 +67,10 @@ function App(){
     <h1> Regular Burger </h1>
     <div className="bread-top"> </div>
     <div> <Tomato /> </div>
-    <div className="patty"> </div>
+    <div> <Patty /> </div>
     <div> <Lettuce /> </div>
     <div className="bread-bottom"> </div>
+    <div> <addTomato /> </div>
     </div>
   );
 }
