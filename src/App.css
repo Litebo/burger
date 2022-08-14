@@ -1,8 +1,8 @@
 .App {
   text-align: center;
   width: 500px;
-  margin: auto;
   height: 450px;
+  margin: auto;
   padding: 70px 0;
 }
 
@@ -14,30 +14,6 @@
   box-shadow: inset -15px 0 #c15711;
   margin: 2% auto;
   }
-
-.fruit {
-  width: 80%;
-  height: 12%;
-  background: red;
-  margin: 2% auto;
-  border-radius: 10px;
-}
-
-.patty {
-  width: 80%;
-  height: 15%;
-  background: linear-gradient(#7f3608, #702e05);
-  margin: 2% auto;
-  border-radius: 15px;
-}
-
-.vegetable {
-  width: 80%;
-  height: 12%;
-  background: green;
-  margin: 2% auto;
-  border-radius: 3px;
-}
 
 .bread-bottom {
   height: 13%;
